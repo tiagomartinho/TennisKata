@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA7CA7FE1FADC72C00F16C00 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7CA7FD1FADC72C00F16C00 /* main.swift */; };
+		EA7CA80B1FADC8CC00F16C00 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7CA80A1FADC8CC00F16C00 /* Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,20 @@
 /* Begin PBXFileReference section */
 		EA7CA7FA1FADC72C00F16C00 /* TennisKata */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TennisKata; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7CA7FD1FADC72C00F16C00 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EA7CA8081FADC8CC00F16C00 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7CA80A1FADC8CC00F16C00 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		EA7CA80C1FADC8CC00F16C00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EA7CA7F71FADC72C00F16C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7CA8051FADC8CC00F16C00 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7CA7FC1FADC72C00F16C00 /* TennisKata */,
+				EA7CA8091FADC8CC00F16C00 /* Tests */,
 				EA7CA7FB1FADC72C00F16C00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7CA7FA1FADC72C00F16C00 /* TennisKata */,
+				EA7CA8081FADC8CC00F16C00 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +73,15 @@
 				EA7CA7FD1FADC72C00F16C00 /* main.swift */,
 			);
 			path = TennisKata;
+			sourceTree = "<group>";
+		};
+		EA7CA8091FADC8CC00F16C00 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EA7CA80A1FADC8CC00F16C00 /* Tests.swift */,
+				EA7CA80C1FADC8CC00F16C00 /* Info.plist */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +104,23 @@
 			productReference = EA7CA7FA1FADC72C00F16C00 /* TennisKata */;
 			productType = "com.apple.product-type.tool";
 		};
+		EA7CA8071FADC8CC00F16C00 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7CA80D1FADC8CC00F16C00 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				EA7CA8041FADC8CC00F16C00 /* Sources */,
+				EA7CA8051FADC8CC00F16C00 /* Frameworks */,
+				EA7CA8061FADC8CC00F16C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = EA7CA8081FADC8CC00F16C00 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +132,10 @@
 				ORGANIZATIONNAME = "Tiago Martinho";
 				TargetAttributes = {
 					EA7CA7F91FADC72C00F16C00 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					EA7CA8071FADC8CC00F16C00 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +154,20 @@
 			projectRoot = "";
 			targets = (
 				EA7CA7F91FADC72C00F16C00 /* TennisKata */,
+				EA7CA8071FADC8CC00F16C00 /* Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA7CA8061FADC8CC00F16C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA7CA7F61FADC72C00F16C00 /* Sources */ = {
@@ -121,6 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7CA7FE1FADC72C00F16C00 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7CA8041FADC8CC00F16C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7CA80B1FADC8CC00F16C00 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +313,32 @@
 			};
 			name = Release;
 		};
+		EA7CA80E1FADC8CC00F16C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elit.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EA7CA80F1FADC8CC00F16C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elit.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +356,15 @@
 			buildConfigurations = (
 				EA7CA8021FADC72C00F16C00 /* Debug */,
 				EA7CA8031FADC72C00F16C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7CA80D1FADC8CC00F16C00 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7CA80E1FADC8CC00F16C00 /* Debug */,
+				EA7CA80F1FADC8CC00F16C00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
