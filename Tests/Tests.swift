@@ -1,10 +1,15 @@
 import XCTest
 
 class Game {
-    var score = "0:0"
+    
+    private var serverPoints = 0
+    
+    var score: String {
+        return "\(serverPoints):0"
+    }
     
     func serverWinsPoint() {
-        score = "15:0"
+        serverPoints += 15
     }
 }
 
