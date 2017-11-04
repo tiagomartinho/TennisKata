@@ -41,4 +41,17 @@ class Tests: XCTestCase {
         
         XCTAssertEqual("0:15", game.score)
     }
+    
+    func testWhenGameIsOnTieReceiverWinsPoint() {
+        // Arrange, Given
+        let game = Game()
+        game.serverWinsPoint()
+        game.receiverWinsPoint()
+
+        // Act, When
+        game.receiverWinsPoint()
+        
+        // Assert, Then
+        XCTAssertEqual("15:30", game.score)
+    }
 }
